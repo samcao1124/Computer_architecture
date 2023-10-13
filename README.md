@@ -24,3 +24,40 @@ The processor is equipped to handle the following edge cases:
 The code in this repository has been designed to handle various machine instructions while addressing specific edge cases to ensure correct execution. 
 The code is well-structured and passes all 9 test cases provided by the Autograder. 
 While there may be some repeated lines of code, the ability to address each instruction's edge cases specifically is a strength of this implementation.
+
+
+## E20 Cache Simulator
+
+### Introduction
+This repository contains a Python-based E20 cache simulator named E20 Cache Simulator.py. 
+This simulator is designed to execute and analyze machine code programs, taking into account cache configurations, memory access, and various instructions.
+The goal of this simulator is to facilitate cache-related experiments and provide insights into program execution behavior.
+
+### Key Features
+1. Cache Configuration
+The simulator can be configured with cache settings, including:
+
+   Cache size
+   Associativity
+   Block size
+   
+Two cache levels (L1 and L2) can be specified, each with its configuration parameters. The provided cache configuration is crucial for understanding cache behavior and its impact on program execution.
+
+3. Machine Code Execution
+The simulator loads a machine code file, processes the instructions, and simulates the execution of the program. It keeps track of the program counter, register values, and memory access.
+
+4. Cache Simulation
+The simulator supports cache simulation for both L1 and L2 caches. It records cache events, such as cache hits and misses, and maintains cache state. This feature allows users to evaluate the effectiveness of different cache configurations in improving program performance.
+
+5. Edge Case Handling
+The code accounts for various edge cases, including instruction execution, overflow control, and program counter boundaries. These considerations ensure the accurate and reliable execution of machine code programs.
+
+### Output
+The simulator provides detailed information about cache configuration, program execution, and cache events. 
+Users can analyze this information to gain insights into the program's behavior and cache performance.
+
+### Conclusion
+The E20 Cache Simulator is a valuable tool for understanding the behavior of machine code programs in the context of different cache configurations. 
+By providing cache simulation capabilities and handling edge cases, this code helps students and researchers explore the impact of caches on program performance and behavior.
+
+
